@@ -11,25 +11,36 @@
     <p>Please fill in this form to create an account to be a Mentee.</p>
     <hr>
 
-    <label for="Name"><b>Name</b></label>
-    <input type="text" placeholder="Your Answer" name="name" required>
+    <label for="FName"><b>First Name</b></label>
+    <input type="text" placeholder="Your Answer" name="fname" required>
+    <br>
+
+    <label for="LName"><b>Last Name</b></label>
+    <input type="text" placeholder="Your Answer" name=lfname" required>
+    <br>
 
     <label for="phone_no"><b>Phone Number</b></label>
     <input type="text" placeholder="Your Answer" name="phone_no" required>
+    <br>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Your Answer" name="email" required>
+    <br>
 
     <label for="City"><b>City</b></label>
     <input type="text" placeholder="Your Answer" name="city" required>
+    <br>
 
     <label for="area"><b>Province/State/Region</b></label>
     <input type="text" placeholder="Your Answer" name="area" required>
+    <br>
 
     <label for="country"><b>Country</b></label>
     <input type="text" placeholder="Your Answer" name="country" required>
+    <br>
 
     <label for="timezone"><b>Time Zone</b></label>
+  <br>
     <select>
       <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
       <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
@@ -115,7 +126,9 @@
       <option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
     </select>	
 
+    <br>
     <label for="communication_platform"><b>Which platforms are you comfortable using to communicate with your mentor? Please check all applicable.</b></label>
+    <br>
     <input type="checkbox" name="comm" value="Phone">Phone<br>
     <input type="checkbox" name="comm" value="Email">Email<br>
     <input type="checkbox" name="comm" value="Skype">Skype<br>
@@ -128,7 +141,9 @@
     <label for="other_select"><b>If Other, please explain</b></label>
     <input type="text" placeholder="Your Answer" name="other_select" required>
 
+    <br>
     <label for="stage"><b>What stage of the sponsorship cycle are you in?</b></label>
+    <br>
     <input type="radio" name="cycle" value="forming">Forming Sponsorship Group<br>
     <input type="radio" name="cycle" value="progress">Application in Process<br>
     <input type="radio" name="cycle" value="approval">Application Submitted - Awaiting Approval<br>
@@ -139,10 +154,14 @@
     <label for="other_select1"><b>If Other selected, please explain</b></label>
     <input type="text" placeholder="Your Answer" name="other_select1" required>
 
+    <br>
     <label for="characteristics"><b>Please briefly describe the characteristics of your sponsorship group (size, community, institution, faith-based/non-faith based, etc.</b></label>
+    <br>
     <input type="text" placeholder="Your Answer" name="characteristics" required>
 
+    <br> 
     <label for="priority"><b>What component of private refugee sponsorship do you wish to prioritize during the course of your mentorship? Please check all applicable</b></label>
+    <br>
     <input type="checkbox" name="prioritize" value="application">Application process<br>
     <input type="checkbox" name="prioritize" value="pre-dep">Logistical support pre-departure<br>
     <input type="checkbox" name="prioritize" value="post-dep">Logistical support post-departure<br>
@@ -157,15 +176,19 @@
     <label for="other_select2"><b>If Other selected, please explain</b></label>
     <input type="text" placeholder="Your Answer" name="other_select2" required>
 
+    <br>
     <label for="type_sponsor"><b>Are you sponsoring a family, couple, group or single individuals?</b></label>
     <input type="text" placeholder="Your Answer" name="type_sponsor" required>
 
+    <br>
     <label for="geog_region"><b>From what geographical region(s) do the refugees you are sponsoring originate from?</b></label>
     <input type="text" placeholder="Your Answer" name="geog_region" required>
 
+    <br>
     <label for="experience"><b>Do you have experience participating in a peer mentorship program, either as a mentor or mentee?</b></label>
     <input type="text" placeholder="Your Answer" name="experience" required>
 
+    <br>
     <label for="expertise"><b>For mentors, what is your expertise (Level 1 = least experienced)</b></label>
     <select>
       <option expertiseID="1">Level 1</option>
@@ -175,10 +198,11 @@
       <option expertiseID="5">Level 5</option>
     </select>
 
-
+    <br>
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
+    <br>
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
     <hr>
@@ -188,7 +212,7 @@
   </div>
   
   <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
   </div>
 </form>
 
