@@ -3,6 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="js/user.js"></script>
+<style>
+  #button {
+    width: 6em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+</style>
 </head>
 <body>
 
@@ -208,11 +226,12 @@
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
     <hr>
 
-    <button class="registerbtn" action="insertUser()">Register</button>
+    <div id="button" onclick="insertUser()"><a href="logIn.html">Register</a></div>
+    
   </div>
   
   <div class="container signin">
-    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+    <p>Already have an account? <a href="login.html" style="text-align: left">Sign in</a>.</p>
   </div>
 </form>
 
