@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/user.js"></script>
 </head>
 <body>
 
@@ -12,36 +13,36 @@
     <hr>
 
     <label for="FName"><b>First Name</b></label>
-    <input type="text" placeholder="Your Answer" name="fname" required>
+    <input type="text" placeholder="Your Answer" name="fname" id="first" required>
     <br>
 
     <label for="LName"><b>Last Name</b></label>
-    <input type="text" placeholder="Your Answer" name=lfname" required>
+    <input type="text" placeholder="Your Answer" name="lfname" id="last" required>
     <br>
 
     <label for="phone_no"><b>Phone Number</b></label>
-    <input type="text" placeholder="Your Answer" name="phone_no" required>
+    <input type="text" placeholder="Your Answer" name="phone_no" id="phone" required>
     <br>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Your Answer" name="email" required>
+    <input type="text" placeholder="Your Answer" name="email" id="email" required>
     <br>
 
     <label for="City"><b>City</b></label>
-    <input type="text" placeholder="Your Answer" name="city" required>
+    <input type="text" placeholder="Your Answer" name="city" id="city" required>
     <br>
 
     <label for="area"><b>Province/State/Region</b></label>
-    <input type="text" placeholder="Your Answer" name="area" required>
+    <input type="text" placeholder="Your Answer" name="area" id="state" required>
     <br>
 
     <label for="country"><b>Country</b></label>
-    <input type="text" placeholder="Your Answer" name="country" required>
+    <input type="text" placeholder="Your Answer" name="country" id="country" required>
     <br>
 
     <label for="timezone"><b>Time Zone</b></label>
   <br>
-    <select>
+    <select id=>
       <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
       <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
       <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
@@ -190,7 +191,7 @@
 
     <br>
     <label for="expertise"><b>For mentors, what is your expertise (Level 1 = least experienced)</b></label>
-    <select>
+    <select id="expertise">
       <option expertiseID="1">Level 1</option>
       <option expertiseID="2">Level 2</option>
       <option expertiseID="3">Level 3</option>
@@ -200,15 +201,14 @@
 
     <br>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
 
     <br>
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
     <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button class="registerbtn" action="insertUser()">Register</button>
   </div>
   
   <div class="container signin">
