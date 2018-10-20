@@ -30,7 +30,6 @@
     <input type="text" placeholder="Your Answer" name="country" required>
 
     <label for="timezone"><b>Time Zone</b></label>
-    <!--<input type="text" placeholder="Your Answer" name="timezone" required>-->
     <select>
       <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
       <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
@@ -116,8 +115,66 @@
       <option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
     </select>	
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Your Answer" name="email" required>
+    <label for="communication_platform"><b>Which platforms are you comfortable using to communicate with your mentor? Please check all applicable.</b></label>
+    <input type="checkbox" name="comm" value="Phone">Phone<br>
+    <input type="checkbox" name="comm" value="Email">Email<br>
+    <input type="checkbox" name="comm" value="Skype">Skype<br>
+    <input type="checkbox" name="comm" value="Google">Google Hangouts<br>
+    <input type="checkbox" name="comm" value="Facebook">Facebook<br>
+    <input type="checkbox" name="comm" value="Whatsapp">Whatsapp<br>
+    <input type="checkbox" name="comm" value="Viber">Viber<br>
+    <input type="checkbox" name="comm" value="Other">Other:<br>
+
+    <label for="other_select"><b>If Other, please explain</b></label>
+    <input type="text" placeholder="Your Answer" name="other_select" required>
+
+    <label for="stage"><b>What stage of the sponsorship cycle are you in?</b></label>
+    <input type="radio" name="cycle" value="forming">Forming Sponsorship Group<br>
+    <input type="radio" name="cycle" value="progress">Application in Process<br>
+    <input type="radio" name="cycle" value="approval">Application Submitted - Awaiting Approval<br>
+    <input type="radio" name="cycle" value="approved">Application Submitted - Approved<br>
+    <input type="radio" name="cycle" value="arrived">Post-Arrival<br>
+    <input type="radio" name="cycle" value="other1">Other:<br>
+
+    <label for="other_select1"><b>If Other selected, please explain</b></label>
+    <input type="text" placeholder="Your Answer" name="other_select1" required>
+
+    <label for="characteristics"><b>Please briefly describe the characteristics of your sponsorship group (size, community, institution, faith-based/non-faith based, etc.</b></label>
+    <input type="text" placeholder="Your Answer" name="characteristics" required>
+
+    <label for="priority"><b>What component of private refugee sponsorship do you wish to prioritize during the course of your mentorship? Please check all applicable</b></label>
+    <input type="checkbox" name="prioritize" value="application">Application process<br>
+    <input type="checkbox" name="prioritize" value="pre-dep">Logistical support pre-departure<br>
+    <input type="checkbox" name="prioritize" value="post-dep">Logistical support post-departure<br>
+    <input type="checkbox" name="prioritize" value="services">Navigation services (e.g. health, education, etc.)<br>
+    <input type="checkbox" name="prioritize" value="support">Emtional support/guidance<br>
+    <input type="checkbox" name="prioritize" value="communcation">Cross-cultural communication<br>
+    <input type="checkbox" name="prioritize" value="conflict">Conflict within your group<br>
+    <input type="checkbox" name="prioritize" value="expectations">Managing expectations of sponsored refugees and the group<br>
+    <input type="checkbox" name="prioritize" value="transition">Transitioning out of sponsorship<br>
+    <input type="checkbox" name="prioritize" value="other2">Other:<br>
+
+    <label for="other_select2"><b>If Other selected, please explain</b></label>
+    <input type="text" placeholder="Your Answer" name="other_select2" required>
+
+    <label for="type_sponsor"><b>Are you sponsoring a family, couple, group or single individuals?</b></label>
+    <input type="text" placeholder="Your Answer" name="type_sponsor" required>
+
+    <label for="geog_region"><b>From what geographical region(s) do the refugees you are sponsoring originate from?</b></label>
+    <input type="text" placeholder="Your Answer" name="geog_region" required>
+
+    <label for="experience"><b>Do you have experience participating in a peer mentorship program, either as a mentor or mentee?</b></label>
+    <input type="text" placeholder="Your Answer" name="experience" required>
+
+    <label for="expertise"><b>For mentors, what is your expertise (Level 1 = least experienced)</b></label>
+    <select>
+      <option expertiseID="1">Level 1</option>
+      <option expertiseID="2">Level 2</option>
+      <option expertiseID="3">Level 3</option>
+      <option expertiseID="4">Level 4</option>
+      <option expertiseID="5">Level 5</option>
+    </select>
+
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
