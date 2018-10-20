@@ -17,8 +17,10 @@ function insertUser(){
     var country = document.getElementById('country').value;
     var langs = document.getElementById('langs').value;
     var platforms = document.getElementById('platforms').value;
+    var expertise = document.getElementById('expertise').value;
+    var password = document.getElementById('password').value;
 
-    var query = "INSERT INTO users (email, first_n, last_n, phone, lang, platform, password) VALUES (email, first, last, phone, langs, platform, password)";
+    var query = "INSERT INTO users (email, first_n, last_n, phone, lang, platform, password, expertise) VALUES (email, first, last, phone, langs, platform, password, expertise)";
     db.run(query, function(err){
         if(err) throw err;
     });
@@ -46,4 +48,5 @@ function queryUserData(){
     });
     return matched;
 }
+
 
